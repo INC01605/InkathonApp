@@ -19,35 +19,35 @@ public class Incident{
  
     @Id
     @Column(name="INCIDENT_ID")
-    int id;
+    public	int id;
  
     @Column(name="MANAGER_ID")
-    String managerID; 
+    public String managerID; 
  
     @Column(name="ACTION_NEEDED")
-    String action;
+    public String action;
     
     @Column(name="STATUS")
-    String status;
+    public String status;
     
     @Column(name="PHOTO")
-    Blob photo;
+    public Blob photo;
     
     @Column(name="LOCATION")
-    String location;
+    public String location;
     
     @Column(name="DESCRIPTION")
-    String description;
+    public String description;
     
     @Column(name="INCIDENT_TYPE")
-    String incidentType;
+    public String incidentType;
     
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Column(name="INCIDENT_DATE")
-    Date incidentDate;
+    public Date incidentDate;
     
     @Column(name="RISK_LEVEL")
-    int riskLevel;
+    public int riskLevel;
     
     public Incident() {
 		super();
@@ -93,7 +93,7 @@ public class Incident{
 //	public void setPhoto(Blob photo) {
 //		this.photo = photo;
 //	}
-
+//  
 	public String getLocation() {
 		return location;
 	}
